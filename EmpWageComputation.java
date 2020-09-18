@@ -53,9 +53,9 @@ public class EmpWageComputation
 
 	}
 
-	public static void NumCompany(int numberOfCompany)
+	public EmpWageComputation(int numberOfCompany)
 	{
-		for(int i=1;i<=numberOfCompany;i++)		
+		for(int i=1;i<=numberOfCompany;i++)
 			{	Scanner sc1=new Scanner(System.in);
 				System.out.println("\nEnter Name of Company : ");
 				String companyName=sc1.nextLine();
@@ -74,6 +74,6 @@ public class EmpWageComputation
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Number of Companies");
 		int numberOfCompany=	sc.nextInt();
-		NumCompany(numberOfCompany);
+		EmpWageComputation obj=new EmpWageComputation(numberOfCompany);
 	}
 }
