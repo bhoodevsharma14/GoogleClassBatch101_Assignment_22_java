@@ -49,7 +49,7 @@ public class EmpWageComputation
 			totalSalary+=salary;
 		}
 
-		System.out.println(Company+" Company Employee Earns "+totalSalary+" This Month");
+		System.out.println(Company+"\t Company Employee Earns "+totalSalary+" This Month\n");
 
 	}
 
@@ -57,13 +57,13 @@ public class EmpWageComputation
 	{
 		for(int i=1;i<=numberOfCompany;i++)		
 			{	Scanner sc1=new Scanner(System.in);
-				System.out.println("Enter Name of Company : ");
+				System.out.println("\nEnter Name of Company : ");
 				String companyName=sc1.nextLine();
 				System.out.println("Enter Wage Per Hours : ");
 				int wagePerHr=sc1.nextInt();
 				System.out.println("Number of Working Days : ");
 				int month=sc1.nextInt();
-				System.out.println("Maximun Nuber of wrking Hours : ");
+				System.out.println("Maximun Nuber of working Hours : ");
 				int maxworkinghrs=sc1.nextInt();
 				CalculateWage(companyName,wagePerHr,month,maxworkinghrs);
 			}
